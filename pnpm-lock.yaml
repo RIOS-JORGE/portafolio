@@ -62,6 +62,10 @@ importers:
       web-vitals:
         specifier: ^2.1.4
         version: 2.1.4
+    devDependencies:
+      tailwindcss:
+        specifier: ^3.4.14
+        version: 3.4.14
 
 packages:
 
