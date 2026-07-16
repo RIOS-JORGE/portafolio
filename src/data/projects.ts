@@ -1,7 +1,7 @@
 import abc from '@/Assets/Projects/abc-e.vercel.app.png';
 import bacan from '@/Assets/Projects/bacan.vercel.app.png';
-import fashions from '@/Assets/Projects/fashions-zeta.vercel.app.png';
 import anas from '@/Assets/Projects/as-anas.vercel.app.png';
+import multitecnicos from '@/Assets/Projects/multitecnicos.com.ar.svg';
 
 import type { Project } from '@/types';
 
@@ -23,19 +23,19 @@ export const projects: Project[] = [
     tags: ['HTML5', 'CSS3'],
   },
   {
-    title: 'Fashions',
-    description: 'Website built with HTML5, CSS3.',
-    image: fashions,
-    github: 'https://github.com/RIOS-JORGE/Fashions',
-    demo: 'https://fashions-zeta.vercel.app/',
-    tags: ['HTML5', 'CSS3'],
+    title: 'Multitecnicos',
+    description: 'Directorio público de técnicos y profesionales.',
+    image: multitecnicos,
+    github: 'https://github.com/RIOS-JORGE/multitecnicos',
+    demo: 'https://multitecnicos.com.ar',
+    tags: ['React', 'TypeScript', 'Node.js'],
   },
   {
     title: 'As Anas',
     description: 'Website built with HTML5, CSS3.',
     image: anas,
     github: 'https://github.com/RIOS-JORGE/As-Anas',
-    demo: 'https://as-anas.vercel.app/',
+    demo: 'https://www.as-anas.pt/en',
     tags: ['HTML5', 'CSS3'],
   },
 ];
