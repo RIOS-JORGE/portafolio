@@ -22,13 +22,13 @@ export default function Contact() {
 
         {/* Email CTA */}
         <a
-          href="mailto:riosjorge.frontend@gmail.com"
+          href="mailto:jorgedrios86@gmail.com"
           className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-accent/10 border border-accent/30
             text-accent font-medium hover:bg-accent/20 hover:shadow-[0_0_20px_rgba(199,112,240,0.3)]
             transition-all duration-300 mb-12"
         >
           <AiOutlineMail className="text-xl" />
-          <span>riosjorge.frontend@gmail.com</span>
+          <span>jorgedrios86@gmail.com</span>
         </a>
 
         {/* Social links */}
