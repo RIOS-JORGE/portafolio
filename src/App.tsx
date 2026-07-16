@@ -1,10 +1,13 @@
-function App() {
-  return (
-    <div>
-      <h1>Portfolio Migration - Vite + TypeScript</h1>
-      <p>This is a placeholder App component.</p>
-    </div>
-  )
-}
+import Hero from '@/components/sections/Hero';
+import About from '@/components/sections/About';
+import Skills from '@/components/sections/Skills';
 
-export default App
+export default function App() {
+  return (
+    <div className="min-h-screen bg-bg-primary text-white font-body">
+      <Hero />
+      <About />
+      <Skills />
+    </div>
+  );
+}
