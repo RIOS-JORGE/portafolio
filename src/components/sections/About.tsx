@@ -51,7 +51,7 @@ export default function About() {
             <img
               src={aboutImg}
               alt="about"
-              className="max-w-full w-auto rounded-lg shadow-[0_0_30px_rgba(199,112,240,0.1)]"
+              className="w-[280px] md:w-[300px] h-auto rounded-lg shadow-[0_0_30px_rgba(199,112,240,0.1)]"
             />
           </div>
         </div>
