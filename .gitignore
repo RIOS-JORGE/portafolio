@@ -26,3 +26,7 @@ dist-ssr
 .env.develpment
 .vercel
 .cuentasdeprueva
+
+# Tool directories
+.atl/
+.codebase-memory/
