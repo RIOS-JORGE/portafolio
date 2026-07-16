@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
@@ -6,8 +6,10 @@ import { FaDownload, FaExternalLinkAlt } from 'react-icons/fa';
 import Section from '@/components/ui/Section';
 import pdfFile from '@/Assets/Front-End-Jorge.pdf';
 
-// Configure pdfjs worker - Vite will handle the worker import
-pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+// Configure pdfjs worker for Vite
+const pdfWorker = useMemo(() => new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url).toString(), []);
+
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 export default function Resume() {
   const [numPages, setNumPages] = useState<number | null>(null);
