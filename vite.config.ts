@@ -26,4 +26,8 @@ export default defineConfig({
     },
     include: ['react', 'react-dom'],
   },
+  // Worker configuration for react-pdf
+  worker: {
+    format: 'es',
+  },
 })
