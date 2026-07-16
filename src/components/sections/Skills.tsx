@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { GitHubCalendar } from 'react-github-calendar';
 import { techStack, tools } from '@/data/skills';
 import TechIcon from '@/components/ui/TechIcon';
 import Section from '@/components/ui/Section';
@@ -73,14 +74,15 @@ export default function Skills() {
           <h2 className="text-3xl md:text-4xl lg:text-[2.4em] font-heading font-medium pb-5 leading-tight">
             Days I <strong className="text-accent">Code</strong>
           </h2>
-          <div className="flex justify-center">
-            {/*
-              react-github-calendar will be installed in a later PR.
-              For now, render a placeholder that will be replaced.
-            */}
-            <div className="text-white/50 text-sm py-8 px-12 rounded-lg border border-white/10 bg-white/5">
-              GitHub contributions calendar (react-github-calendar)
-            </div>
+          <div className="flex justify-center overflow-x-auto">
+            <GitHubCalendar
+              username="RIOS-JORGE"
+              colorScheme="dark"
+              fontSize={16}
+              labels={{
+                totalCount: '{{count}} contributions in the last year',
+              }}
+            />
           </div>
         </div>
       </div>
