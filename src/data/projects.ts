@@ -36,6 +36,6 @@ export const projects: Project[] = [
     image: anas,
     github: 'https://github.com/RIOS-JORGE/As-Anas',
     demo: 'https://www.as-anas.pt/en',
-    tags: ['HTML5', 'CSS3'],
+    tags: ['HTML5', 'CSS3', 'TypeScript', 'Next.js', 'React', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Framer Motion', 'Lenis', 'Sanity CMS', 'Google Analytics GA4', 'Google Tag Manager', 'Cloudflare', 'Vercel', 'Turbopack', 'HTTP/3', 'Open Graph', 'Priority Hints'],
   },
 ];
