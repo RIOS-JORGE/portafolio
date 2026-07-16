@@ -6,11 +6,8 @@ import { FaDownload, FaExternalLinkAlt } from 'react-icons/fa';
 import Section from '@/components/ui/Section';
 import pdfFile from '@/Assets/Front-End-Jorge.pdf';
 
-// Configure pdfjs worker for Vite
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
+// Configure pdfjs worker - Vite will handle the worker import
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
 export default function Resume() {
   const [numPages, setNumPages] = useState<number | null>(null);
