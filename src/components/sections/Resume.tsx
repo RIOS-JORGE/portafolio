@@ -22,7 +22,7 @@ export default function Resume() {
         <div className="flex justify-center gap-4 mb-10">
           <a
             href={pdfFile}
-            download="Jorge_Rios_Resume.pdf"
+            download="Jorge Rios CV.pdf"
             className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-dark
               text-white font-medium rounded-lg transition-all duration-300
               hover:shadow-[0_0_20px_rgba(199,112,240,0.4)]"
