@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import { FaDownload, FaExternalLinkAlt } from 'react-icons/fa';
@@ -9,11 +7,6 @@ import pdfFile from '@/Assets/Front-End-Jorge.pdf';
 
 
 export default function Resume() {
-  const [numPages, setNumPages] = useState<number | null>(null);
-
-  function onDocumentLoadSuccess({ numPages: nextNumPages }: { numPages: number }) {
-    setNumPages(nextNumPages);
-  }
 
   return (
     <Section id="resume" className="py-28 bg-gradient-to-b from-bg-gradient-start to-bg-gradient-end text-white">
@@ -48,38 +41,6 @@ export default function Resume() {
             Open in New Tab
           </a>
         </div>
-
-        {/* PDF Preview */}
-        <div className="flex justify-center">
-          <div className="rounded-lg overflow-hidden shadow-[0_0_30px_rgba(199,112,240,0.1)] border border-white/10">
-            <Document
-              file={pdfFile}
-              onLoadSuccess={onDocumentLoadSuccess}
-              loading={
-                <div className="flex items-center justify-center w-[595px] h-[842px] bg-bg-secondary">
-                  <div className="text-accent animate-pulse">Loading PDF...</div>
-                </div>
-              }
-              error={
-                <div className="flex items-center justify-center w-[595px] h-[842px] bg-bg-secondary">
-                  <div className="text-red-400">Failed to load PDF</div>
-                </div>
-              }
-            >
-              <Page
-                pageNumber={1}
-                width={595}
-                className="bg-white"
-              />
-            </Document>
-          </div>
-        </div>
-
-        {numPages && numPages > 1 && (
-          <p className="text-center text-white/40 text-sm mt-4">
-            Showing page 1 of {numPages}
-          </p>
-        )}
       </div>
     </Section>
   );
