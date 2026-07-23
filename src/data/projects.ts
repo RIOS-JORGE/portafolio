@@ -1,7 +1,7 @@
 import abc from '@/Assets/Projects/abc-e.vercel.app.png';
 import bacan from '@/Assets/Projects/bacan.vercel.app.png';
 import anas from '@/Assets/Projects/as-anas.vercel.app.png';
-import multitecnicos from '@/Assets/Projects/multitecnicos.com.ar.svg';
+import labrutal from '@/Assets/Projects/la-brutal-hamburgueseria.vercel.app.svg';
 
 import type { Project } from '@/types';
 
@@ -23,12 +23,12 @@ export const projects: Project[] = [
     tags: ['HTML5', 'CSS3'],
   },
   {
-    title: 'Multitecnicos',
-    description: 'Directorio público de técnicos y profesionales.',
-    image: multitecnicos,
-    github: 'https://github.com/RIOS-JORGE/multitecnicos',
-    demo: 'https://multitecnicos.com.ar',
-    tags: ['React', 'TypeScript', 'Node.js'],
+    title: 'La Brutal Hamburguesería',
+    description: 'Landing page con menú vivo, carrito y checkout por WhatsApp. Panel admin con Supabase.',
+    image: labrutal,
+    github: 'https://github.com/RIOS-JORGE/la-brutal-hamburgueseria',
+    demo: 'https://la-brutal-hamburgueseria.vercel.app',
+    tags: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
   },
   {
     title: 'As Anas',
